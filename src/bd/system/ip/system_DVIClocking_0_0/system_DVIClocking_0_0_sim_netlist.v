@@ -1,10 +1,10 @@
-// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Sep 18 19:46:51 2018
-// Host        : catuna-ro running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+// Date        : Sat Feb 23 23:38:23 2019
+// Host        : marvel-001 running 64-bit Ubuntu 18.04.2 LTS
 // Command     : write_verilog -force -mode funcsim
-//               D:/Ionut/Camy/PublicGit/src/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_sim_netlist.v
+//               /home/jc/git/Zybo-Z7-20-pcam-5c/src/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_sim_netlist.v
 // Design      : system_DVIClocking_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,8 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_DVIClocking_0_0,DVIClocking,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "DVIClocking,Vivado 2017.4" *) 
+(* CHECK_LICENSE_TYPE = "system_DVIClocking_0_0,DVIClocking,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
+(* x_core_info = "DVIClocking,Vivado 2018.3" *) 
 (* NotValidForBitStream *)
 module system_DVIClocking_0_0
    (PixelClk5X,

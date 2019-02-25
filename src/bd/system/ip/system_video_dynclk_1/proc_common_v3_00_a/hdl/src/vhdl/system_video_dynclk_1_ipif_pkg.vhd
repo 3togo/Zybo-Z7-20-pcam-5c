@@ -39,7 +39,7 @@
 -- ** expressly prohibited.                                               **
 -- **                                                                     **
 -- ** Any modifications that are made to the Source Code are              **
--- ** done at the user’s sole risk and will be unsupported.               **
+-- ** done at the userÂ’s sole risk and will be unsupported.               **
 -- ** The Xilinx Support Hotline does not have access to source           **
 -- ** code and therefore cannot answer specific questions related         **
 -- ** to source HDL. The Xilinx Hotline support of original source        **
@@ -201,7 +201,7 @@ function find_ard_id (id_array : INTEGER_ARRAY_TYPE;
 function find_id_dwidth (id_array    : INTEGER_ARRAY_TYPE; 
                          dwidth_array: INTEGER_ARRAY_TYPE;
                          id          : integer;
-                         default     : integer) 
+                         default_i     : integer) 
                          return integer;
 
 
@@ -1012,12 +1012,12 @@ function find_ard_id (id_array : INTEGER_ARRAY_TYPE;
 function find_id_dwidth (id_array    : INTEGER_ARRAY_TYPE; 
                         dwidth_array: INTEGER_ARRAY_TYPE;
                         id          : integer;
-                        default     : integer) return integer is
+                        default_i     : integer) return integer is
 
 
      Variable id_present   : Boolean := false;
      Variable array_index  : Integer := 0;
-     Variable dwidth       : Integer := default;
+     Variable dwidth       : Integer := default_i;
 
  begin
 

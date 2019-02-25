@@ -1,10 +1,10 @@
-// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Jun 19 18:58:13 2018
-// Host        : elodlt-ro running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top system_v_axi4s_vid_out_0_0 -prefix
-//               system_v_axi4s_vid_out_0_0_ system_v_axi4s_vid_out_0_0_stub.v
+// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+// Date        : Sat Feb 23 23:03:08 2019
+// Host        : marvel-001 running 64-bit Ubuntu 18.04.2 LTS
+// Command     : write_verilog -force -mode synth_stub
+//               /home/jc/git/Zybo-Z7-20-pcam-5c/src/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_stub.v
 // Design      : system_v_axi4s_vid_out_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,13 +13,13 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "v_axi4s_vid_out_v4_0_8,Vivado 2017.4" *)
+(* X_CORE_INFO = "v_axi4s_vid_out_v4_0_10,Vivado 2018.3" *)
 module system_v_axi4s_vid_out_0_0(aclk, aclken, aresetn, s_axis_video_tdata, 
   s_axis_video_tvalid, s_axis_video_tready, s_axis_video_tuser, s_axis_video_tlast, fid, 
   vid_io_out_clk, vid_io_out_ce, vid_io_out_reset, vid_active_video, vid_vsync, vid_hsync, 
   vid_vblank, vid_hblank, vid_field_id, vid_data, vtg_vsync, vtg_hsync, vtg_vblank, vtg_hblank, 
-  vtg_active_video, vtg_field_id, vtg_ce, locked, overflow, underflow, status)
-/* synthesis syn_black_box black_box_pad_pin="aclk,aclken,aresetn,s_axis_video_tdata[23:0],s_axis_video_tvalid,s_axis_video_tready,s_axis_video_tuser,s_axis_video_tlast,fid,vid_io_out_clk,vid_io_out_ce,vid_io_out_reset,vid_active_video,vid_vsync,vid_hsync,vid_vblank,vid_hblank,vid_field_id,vid_data[23:0],vtg_vsync,vtg_hsync,vtg_vblank,vtg_hblank,vtg_active_video,vtg_field_id,vtg_ce,locked,overflow,underflow,status[31:0]" */;
+  vtg_active_video, vtg_field_id, vtg_ce, locked, overflow, underflow, fifo_read_level, status)
+/* synthesis syn_black_box black_box_pad_pin="aclk,aclken,aresetn,s_axis_video_tdata[23:0],s_axis_video_tvalid,s_axis_video_tready,s_axis_video_tuser,s_axis_video_tlast,fid,vid_io_out_clk,vid_io_out_ce,vid_io_out_reset,vid_active_video,vid_vsync,vid_hsync,vid_vblank,vid_hblank,vid_field_id,vid_data[23:0],vtg_vsync,vtg_hsync,vtg_vblank,vtg_hblank,vtg_active_video,vtg_field_id,vtg_ce,locked,overflow,underflow,fifo_read_level[10:0],status[31:0]" */;
   input aclk;
   input aclken;
   input aresetn;
@@ -49,5 +49,6 @@ module system_v_axi4s_vid_out_0_0(aclk, aclken, aresetn, s_axis_video_tdata,
   output locked;
   output overflow;
   output underflow;
+  output [10:0]fifo_read_level;
   output [31:0]status;
 endmodule

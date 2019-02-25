@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -75,6 +75,8 @@ ARCHITECTURE system_DVIClocking_0_0_arch OF system_DVIClocking_0_0 IS
       aLockedOut : OUT STD_LOGIC
     );
   END COMPONENT DVIClocking;
+  ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
+  ATTRIBUTE IP_DEFINITION_SOURCE OF system_DVIClocking_0_0_arch: ARCHITECTURE IS "module_ref";
 BEGIN
   U0 : DVIClocking
     PORT MAP (

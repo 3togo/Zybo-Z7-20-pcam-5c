@@ -31,7 +31,7 @@ set repo_dir $origin_dir/repo
 #set_param board.repoPaths "[file normalize "$repo_dir/board_files"]"
 
 # Create project
-create_project $proj_name $dest_dir
+create_project $proj_name $dest_dir -force
 
 # Set the directory path for the new project
 set proj_dir [get_property directory [current_project]]

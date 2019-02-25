@@ -164,9 +164,9 @@ entity system_video_dynclk_1_axi_clk_config is
 
    -- Fan-Out attributes for XST
 
-   ATTRIBUTE MAX_FANOUT                    : string;
-   ATTRIBUTE MAX_FANOUT   of s_axi_aclk    : signal is "10000";
-   ATTRIBUTE MAX_FANOUT   of s_axi_aresetn : signal is "10000";
+   --ATTRIBUTE MAX_FANOUT                    : string;
+   --ATTRIBUTE MAX_FANOUT   of s_axi_aclk    : signal is "10000";
+   --ATTRIBUTE MAX_FANOUT   of s_axi_aresetn : signal is "10000";
 
 
 end entity system_video_dynclk_1_axi_clk_config;

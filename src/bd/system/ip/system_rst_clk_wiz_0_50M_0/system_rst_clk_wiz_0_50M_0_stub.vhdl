@@ -1,10 +1,10 @@
--- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Tue Jun 19 18:56:17 2018
--- Host        : elodlt-ro running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top system_rst_clk_wiz_0_50M_0 -prefix
---               system_rst_clk_wiz_0_50M_0_ system_rst_clk_wiz_0_50M_0_stub.vhdl
+-- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+-- Date        : Sat Feb 23 23:03:01 2019
+-- Host        : marvel-001 running 64-bit Ubuntu 18.04.2 LTS
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/jc/git/Zybo-Z7-20-pcam-5c/src/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_stub.vhdl
 -- Design      : system_rst_clk_wiz_0_50M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -34,6 +34,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "slowest_sync_clk,ext_reset_in,aux_reset_in,mb_debug_sys_rst,dcm_locked,mb_reset,bus_struct_reset[0:0],peripheral_reset[0:0],interconnect_aresetn[0:0],peripheral_aresetn[0:0]";
 attribute x_core_info : string;
-attribute x_core_info of stub : architecture is "proc_sys_reset,Vivado 2017.4";
+attribute x_core_info of stub : architecture is "proc_sys_reset,Vivado 2018.3";
 begin
 end;
